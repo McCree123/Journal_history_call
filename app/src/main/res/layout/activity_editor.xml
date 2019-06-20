@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="Общая информация" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/edit_guest_path_to_photo"
+                style="@style/EditorFieldStyle"
+                android:hint="Путь к фото на устройстве" />
+                
+            <EditText
+                android:id="@+id/edit_guest_f"
+                style="@style/EditorFieldStyle"
+                android:hint="Фамилия"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_guest_i"
+                style="@style/EditorFieldStyle"
+                android:hint="Имя"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_guest_o"
+                style="@style/EditorFieldStyle"
+                android:hint="Отчество"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_guest_datetime"
+                style="@style/EditorFieldStyle"
+                android:hint="Дата/время звонка"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_guest_howlong"
+                style="@style/EditorFieldStyle"
+                android:hint="Продолжительность звонка"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_guest_price"
+                style="@style/EditorFieldStyle"
+                android:hint="Стоимость звонка"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
